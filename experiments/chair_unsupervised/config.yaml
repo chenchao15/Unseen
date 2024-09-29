@@ -1,0 +1,17 @@
+synth_set: "03001627"
+checkpoint_dir: /path/to/checkpoint
+inp_dir: ../../data/tf_records
+gt_pc_dir: ../../data/gt/downsampled
+eval_split: test
+eval_unsupervised_shape: true
+vox_size: 128
+pc_gauss_kernel_size: 21
+pc_relative_sigma: 3.0
+pc_num_points: 2048
+pc_point_dropout: 0.07
+gt_size: 16213 #16213 #9601 #15354 #13622
+predict_pose: false
+pose_predict_num_candidates: 1
+pose_predictor_student_loss_weight: 20.0
+other_class: 04256520
+num_views: 20
